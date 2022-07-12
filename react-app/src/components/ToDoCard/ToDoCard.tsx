@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react'
-import styles from '../ToDoCard/toDoCard.module.css'
-import { useEffect } from 'react';
+import React, { useContext } from 'react'
+// import styles from '../ToDoCard/toDoCard.module.css'
+// import { useEffect } from 'react';
 import { context } from "../Provider/Provider";
 import ToDoList from '../ToDoList/ToDoList';
 import AddTask from '../AddTask/AddTask';

@@ -47,7 +47,7 @@ const todosReducer = produce((draft: Draft, action: Actions) => {
             draft.todos = [];
             break;
         case "TOGGLE_TODO_COMPLETED":
-            const todoIdx = draft.todos.findIndex(element => element.id == action.payload.id)
+            const todoIdx = draft.todos.findIndex(element => element.id === action.payload.id)
             draft.todos[todoIdx].completed = !draft.todos[todoIdx].completed
     }
 })
