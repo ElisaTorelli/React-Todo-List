@@ -7,7 +7,7 @@ import ToDoCard from './components/ToDoCard/ToDoCard';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      {/* <NavBar/> */}
       {/* <LoginCard/> */}
       <Provider children={undefined} />
       <ToDoCard />

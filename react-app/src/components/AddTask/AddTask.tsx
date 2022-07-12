@@ -21,12 +21,13 @@ const AddTask = () => {
     return (
         <div>
             <input 
-                placeholder='prova' 
+                placeholder='add Task...' 
                 type='text' 
                 value={todo} 
                 onChange={element => setTodo(element.target.value)}
                 onKeyDown={handleKeyDown}
-                ></input>
+                />
+                <button onClick={handleSubmit}>Add</button>
         </div>
     )
 }
