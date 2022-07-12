@@ -4,17 +4,16 @@ import styles from '../ToDoCard/toDoCard.module.css'
 import { context } from "../Provider/Provider";
 import ToDoList from '../ToDoList/ToDoList';
 import AddTask from '../AddTask/AddTask';
-import listIcon from '../../assets/Images/list.png'
+// import listIcon from '../../assets/Images/list.png'
 
 
 const ToDoCard = () => {
 
     const {dispatch} = useContext(context)
-
     
     function handleClearButtonClick(event: any){
         event.preventDefault();
-        dispatch({type: 'CLEAR_TODOS'});
+        dispatch({type: 'REMOVE_ALL_TASKS'});
     }
 
     return (
