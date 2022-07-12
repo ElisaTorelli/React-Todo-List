@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
-// import styles from '../ToDoCard/toDoCard.module.css'
+import styles from '../ToDoCard/toDoCard.module.css'
 // import { useEffect } from 'react';
 import { context } from "../Provider/Provider";
 import ToDoList from '../ToDoList/ToDoList';
 import AddTask from '../AddTask/AddTask';
+import listIcon from '../../assets/Images/list.png'
 
 
 const ToDoCard = () => {
@@ -17,10 +18,13 @@ const ToDoCard = () => {
     }
 
     return (
-        <div>
-            <button onClick={handleClearButtonClick}>ClearItems</button>
+        <div className={styles.mainContainer}>
+            <div className={styles.headerContainer}>
+                <h2>Today</h2>
+            </div>
             <ToDoList />
             <AddTask />
+            <button onClick={handleClearButtonClick}>Cancel</button>
         </div>
     )
 }
